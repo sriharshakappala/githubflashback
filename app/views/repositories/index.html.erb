@@ -1,47 +1,73 @@
-    <section id="promo" class="promo section offset-header">
-        <div class="container text-center">
-            <h2 class="title">today's<span class="highlight">Trending</span></h2>
-            <p class="intro">A free mobile-friendly Bootstrap theme designed to help developers
-promote their personal projects</p>
-            <div class="btns">
-                <a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/" target="_blank">Demo</a>
-                <a class="btn btn-cta-primary" href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">Download</a>
+<style>
+.intro .scrollto {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.intro a:hover {
+    color: #074f66;
+}
+.intro a:visited {
+    color: #ffffff;
+}
+.intro a:focus {
+    color: #ffffff;
+}
+#promo h4{
+    color: #ffffff;
+}
+</style>
+
+<section id="promo" class="promo section offset-header">
+    <div class="container text-center">
+        <h2 class="title">today's<span class="highlight">Trending</span></h2>
+        <p class="intro">nope, just take me to <a class="scrollto" href="#features">timemachine</a> instead</p>
+        <% @repos.each do |repo| %>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6">
+                <h4><%= repo.name %> / <%= repo.author %></h4>
             </div>
-            <ul class="meta list-inline">
-                <li><a href="#" target="_blank">View on GitHub</a></li>
-                <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li>
-                <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
-            </ul><!--//meta-->
-        </div><!--//container-->
-        <div class="social-media">
-            <div class="social-media-inner container text-center">
-                <ul class="list-inline">
-                    <li class="twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li><!--//twitter-follow-->
-                    <li class="twitter-tweet">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li><!--//twitter-tweet-->
-                    <li class="facebook-like">
-                         <div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-                    </li><!--//facebook-like-->
-                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
-                    <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>
-                    <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>
-                    <!--//
-                    <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
-                    -->
-                </ul>
+            <div class="col-md-4 col-sm-4 col-lg-4">
+                <a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/">Visit Repo</a>
+                <a class="btn btn-cta-primary" href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/">Download</a>
             </div>
         </div>
-    </section><!--//promo-->
+        <br>
+        <% end %>        
+        <ul class="meta list-inline">
+            <li><a href="#" target="_blank">View on GitHub</a></li>
+            <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li>
+            <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
+        </ul><!--//meta-->
+    </div><!--//container-->
+    <div class="social-media">
+        <div class="social-media-inner container text-center">
+            <ul class="list-inline">
+                <li class="twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li><!--//twitter-follow-->
+                <li class="twitter-tweet">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li><!--//twitter-tweet-->
+                <li class="facebook-like">
+                     <div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                </li><!--//facebook-like-->
+                <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>
+                <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>
+                <!--//
+                <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+                -->
+            </ul>
+        </div>
+    </div>
+</section><!--//promo-->
     
     <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="title text-center">What is devAid?</h2>
+            <h2 class="title text-center">What is githubFlashback?</h2>
             <p class="intro text-center">Explain your project in detail. Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -49,7 +75,7 @@ promote their personal projects</p>
                         <i class="fa fa-heart"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Designed for developers</h3>
+                        <h3 class="sub-title">Designed with love on Github</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->
@@ -58,7 +84,7 @@ promote their personal projects</p>
                         <i class="fa fa-clock-o"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Time saver</h3>
+                        <h3 class="sub-title">History of trending repos</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->
@@ -67,44 +93,16 @@ promote their personal projects</p>
                         <i class="fa fa-crosshairs"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">UX-centred</h3>
+                        <h3 class="sub-title">Developed for Community</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
                     </div><!--//content-->
                 </div><!--//item-->           
-                <div class="clearfix visible-md"></div>    
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-tablet"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">Mobile-friendly</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->                
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">Easy to customise</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-sm-6 col-xs-12">
-                    <div class="icon-holder">
-                        <i class="fa fa-coffee"></i>
-                    </div>
-                    <div class="content">
-                        <h3 class="sub-title">LESS files included</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->               
+                <div class="clearfix visible-md"></div>
             </div><!--//row-->            
         </div><!--//container-->
     </section><!--//about-->
     
-    <!-- ******FEATURES****** --> 
-    <section id="features" class="features section">
+    <section id="timemachine" class="features section">
         <div class="container text-center">
             <h2 class="title">Features</h2>
             <ul class="feature-list list-unstyled">
@@ -249,7 +247,7 @@ promote their personal projects</p>
                 </div><!--//author-message-->
                 <div class="clearfix"></div>
                 <div class="info text-center">
-                    <h4 class="sub-title">Get Connected</h4>
+                    <h4 class="sub-title">Like my work? Say hello to me</h4>
                     <ul class="social-icons list-inline">
                         <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.facebook.com/3rdwavethemes" target="_blank"><i class="fa fa-facebook"></i></a></li>
