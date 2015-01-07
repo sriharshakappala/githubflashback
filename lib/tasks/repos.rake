@@ -5,7 +5,7 @@ namespace :repos do
 		page = agent.get('http://github.com/trending')
 		page.search('.repo-list-name').each do |repo|
 			repo = repo.text.strip.split
-			Repository.create(author: repo[0], name: repo[2])
+			Repository.create(author: repo[0], name: repo[2], trending_on: Date.today)
 		end
 	end
 end

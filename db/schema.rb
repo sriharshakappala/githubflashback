@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150105110708) do
   create_table "repositories", force: true do |t|
     t.string   "name"
     t.string   "author"
+    t.date     "trending_on"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
