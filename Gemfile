@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 
 gem 'whenever'
 gem 'mechanize'
+gem 'nokogiri'
+gem 'pry'

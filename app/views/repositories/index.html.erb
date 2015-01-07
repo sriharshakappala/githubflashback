@@ -20,7 +20,7 @@
 <section id="promo" class="promo section offset-header">
     <div class="container text-center">
         <h2 class="title">today's<span class="highlight">Trending</span></h2>
-        <p class="intro">nope, just take me to <a class="scrollto" href="#features">timemachine</a> instead</p>
+        <p class="intro">nope, just take me to <a class="scrollto" href="#timemachine">timemachine</a> instead</p>
         <% @repos.each do |repo| %>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-lg-6">
@@ -54,17 +54,12 @@
                 </li><!--//facebook-like-->
                 <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
                 <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>
-                <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>
-                <!--//
-                <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
-allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
-                -->
+                <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>                
             </ul>
         </div>
     </div>
-</section><!--//promo-->
+</section>
     
-    <!-- ******ABOUT****** --> 
     <section id="about" class="about section">
         <div class="container">
             <h2 class="title text-center">What is githubFlashback?</h2>
@@ -95,27 +90,34 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                     <div class="content">
                         <h3 class="sub-title">Developed for Community</h3>
                         <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
-                    </div><!--//content-->
-                </div><!--//item-->           
+                    </div>
+                </div>
                 <div class="clearfix visible-md"></div>
-            </div><!--//row-->            
-        </div><!--//container-->
-    </section><!--//about-->
-    
-    <section id="timemachine" class="features section">
-        <div class="container text-center">
-            <h2 class="title">Features</h2>
-            <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-check"></i> Fully responsive</li>
-                <li><i class="fa fa-check"></i> HTML5 + CSS3</li>
-                <li><i class="fa fa-check"></i> Built on <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.3</a></li>
-                <li><i class="fa fa-check"></i> 400+ FontAwesome icons</li>
-                <li><i class="fa fa-check"></i> 4 colour schemes</li>
-                <li><i class="fa fa-check"></i> LESS files included</li>
-                <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
-            </ul>
-        </div><!--//container-->
-    </section><!--//features-->
+            </div>
+        </div>
+    </section>
+
+
+<section id="timemachine" class="promo section offset-header">
+    <div class="container text-center">
+        <h2 class="title">time<span class="highlight">Machine</span></h2>
+        <p class="intro">show trending repositories on</p>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="intro">show trending repositories on</p>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="datepicker" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                <a class="btn btn-cta-secondary" href="">Show me</a>
+            </div>
+        </div>        
+        <ul class="meta list-inline">
+            <li><a href="#" target="_blank">View on GitHub</a></li>
+            <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li>
+            <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
+        </ul>
+    </div>
+</section>
     
     <!-- ******DOCS****** --> 
     <section id="docs" class="docs section">
@@ -231,10 +233,11 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                 <p class="intro  text-center">I hope you find this Bootstrap template useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
                 <div class="author-message">                      
                     <div class="profile">
-                        <img class="img-responsive" src="assets/images/profile.png" alt="" />
-                    </div><!--//profile-->
+                        <!-- <img class="img-responsive" src="assets/images/profile.png" alt="" /> -->
+                        <img class="img-responsive" alt="" />
+                    </div>
                     <div class="speech-bubble">
-                        <h3 class="sub-title">Want to get more freebies in the future?</h3>
+                        <h3 class="sub-title">Did you like my work?</h3>
                         <p>I tweet about #UX and #webdev related resources/content at <a href="https://twitter.com/3rdwave_themes" target="_blank">@3rdwave_themes</a> 
                         <p>If you like what I do, you can follow me on twitter and I will keep you informed about my next free template there :)</p>
                         <p><strong>[Tip for developers]:</strong> If you take on freelance work you can put a tailored message here about your availability to attract potential clients. Be creative and good luck!</p> 
@@ -242,21 +245,30 @@ allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"><
                             <span class="name"><a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a></span>
                             <br />
                             <span class="title">UX/UI Designer</span>
-                        </div><!--//source-->
-                    </div><!--//speech-bubble-->                        
-                </div><!--//author-message-->
+                        </div>
+                    </div>                        
+                </div>
                 <div class="clearfix"></div>
                 <div class="info text-center">
-                    <h4 class="sub-title">Like my work? Say hello to me</h4>
+                    <h4 class="sub-title" style="color: #ffffff">Wanna say hello to me?</h4>
                     <ul class="social-icons list-inline">
                         <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.facebook.com/3rdwavethemes" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/xiaoying"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="http://instagram.com/xyriley"><i class="fa fa-instagram"></i></a></li>  
-                        <li><a href="https://dribbble.com/Xiaoying"><i class="fa fa-dribbble"></i></a></li>   
-                        <li class="last"><a href="mailto: hello@3rdwavemedia.com"><i class="fa fa-envelope"></i></a></li>              
+                        <li><a href="mailto: sriharsha.kappala@hotmail.com"><i class="fa fa-github"></i></a></li>
+                        <li><a href="mailto: sriharsha.kappala@hotmail.com"><i class="fa fa-stack-overflow"></i></a></li>
+                        <li class="last"><a href="mailto: sriharsha.kappala@hotmail.com"><i class="fa fa-envelope"></i></a></li>
                     </ul>
-                </div><!--//info-->
-            </div><!--//contact-inner-->
-        </div><!--//container-->
-    </section><!--//contact-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    $( document ).ready(function() {
+        $("#datepicker" ).datepicker();
+        $("#datepicker").on('changeDate', function(ev){
+            $(this).datepicker('hide');
+        });
+    });
+</script>
