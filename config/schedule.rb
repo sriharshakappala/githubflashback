@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every 1.day do
-	runner "GithubTrending.test"
+	rake "GithubTrending.test"
 end
